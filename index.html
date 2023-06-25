@@ -13,51 +13,51 @@
         crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container border border-dark mt-3 mb-3 rounded" id="formulario-pago">
-        <div class="row bg bg-light border border-light rounded">
-            <h1>Payment Form Example</h1>
+    <div class="container border mt-3 mb-3 rounded" id="formulario-pago">
+        <div class="row bg bg-light p-2 border border-light rounded">
+            <h2>Payment Form Example</h2>
         </div>
         <div class="row d-flex mx-2 mt-2 mb-2 rounded">
             <div class="container rounded" id="seccion-2">
-                <div class="row d-flex bg bg-light rounded">
+                <div class="row d-flex p-2 bg bg-danger text-white rounded" >
                     <h6>Some fields are missing</h6>
                 </div>
                 <div class="row mt-2">
                     <div class="col-5">
                         <div class="row">Card #</div>
-                        <div class="row me-1"><input class="rounded" placeholder="XXXX-XXXXXXX-XXXXXX" /></div>
+                        <div class="row me-1"><input class="rounded border-2 border" placeholder="XXXX-XXXXXXX-XXXXXX" /></div>
                     </div>
                     <div class="col-3">
                         <div class="row">CVC #</div>
-                        <div class="row me-1"><input class="rounded" placeholder="XXXX-XXXXXXX-XXXXXX" /></div>
+                        <div class="row me-1"><input class="rounded border-2 border" placeholder="XXXX-XXXXXXX-XXXXXX" /></div>
                     </div>
                     <div class="col-4">
                         <div class="row">Amount</div>
                         <div class="row d-flex justify-content-start me-1">
                             <div class="col-1 d-flex justify-content-end text-end">$</div>
-                            <div class="col-10"><input class="rounded" placeholder="Amount" type="number" /></div>
+                            <div class="col-10"><input class="rounded border-2 border" placeholder="Amount" type="number" /></div>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-4">
                     <div class="col-6">
                         <div class="row">First Name</div>
-                        <div class="row me-1"><input class="rounded" placeholder="Name" /></div>
+                        <div class="row me-1"><input class="rounded border-2 border" placeholder="Name" /></div>
                     </div>
                     <div class="col-6">
                         <div class="row">Last Name</div>
-                        <div class="row me-1"><input class="rounded" placeholder="Last Name" /></div>
+                        <div class="row me-1"><input class="rounded border-2 border" placeholder="Last Name" /></div>
                     </div>
                 </div>
                 <div class="row mt-4">
                     <div class="col-6">
                         <div class="row">City</div>
-                        <div class="row me-1"><input class="rounded" placeholder="City" /></div>
+                        <div class="row me-1"><input class="rounded border-2 border" placeholder="City" /></div>
                     </div>
                     <div class="col-2 me-1">
                         <div class="row">State</div>
                         <div class="row">
-                            <select name="state" id="states" class="rounded height-select">
+                            <select name="state" id="states" class="rounded border-2 border height-select">
                                 <option value="florida">San José</option>
                                 <option value="dc">Cartago</option>
                                 <option value="california">Heredia</option>
@@ -67,40 +67,42 @@
                     </div>
                     <div class="col-3 ms-2">
                         <div class="row">Postal Code</div>
-                        <div class="row me-1"><input class="rounded" placeholder="Postal Code" /></div>
+                        <div class="row me-1"><input class="rounded border-2 border" placeholder="Postal Code" /></div>
                     </div>
                 </div>
                 <div class="row mt-4">
                     <div class="col-6">
-                        <div class="row">We accept</div>
-                        <div class="row bg bg-danger">
+                        <div class="row">We accept:</div>
+                        <br/>
+                        <div class="row bg bg-light">
                             <div class="col-2">
-                                <input type="radio" name="credit-card" /><i class="fa-brands fa-cc-mastercard"></i>
+                                <input type="radio" name="credit-card" /> <i class="fa-brands fa-cc-mastercard"></i>
                             </div>
                             <div class="col-2">
-                                <input type="radio" name="credit-card" /><i class="fa-brands fa-cc-visa"></i>
+                                <input type="radio" name="credit-card" /> <i class="fa-brands fa-cc-visa"></i>
                             </div>
                             <div class="col-2">
-                                <input type="radio" name="credit-card" /><i class="fa-brands fa-cc-amex"></i>
+                                <input type="radio" name="credit-card" /> <i class="fa-brands fa-cc-amex"></i>
                             </div>
                             <div class="col-2">
-                                <input type="radio" name="credit-card" /><i class="fa-brands fa-cc-apple-pay"></i>
+                                <input type="radio" name="credit-card" /> <i class="fa-brands fa-cc-apple-pay"></i>
                             </div>
 
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="row">Message</div>
-                        <div class="row me-1"><textarea class="rounded" placeholder="message"></textarea></div>
+                        <div class="row me-1"><textarea class="rounded border-2 border" placeholder="message"></textarea></div>
                     </div>
                 </div>
             </div>
 
         </div>
-        <div class="row d-flex bg bg-light border border-dark rounded">
-            <div class="col-8"></div>
-            <div class="col-2 d-flex justify-content-end"><button type="button">Cancel</button></div>
-            <div class="col-2"><button type="submit">Send</button></div>
+        <div class="row d-flex p-2 bg bg-light border rounded">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                <button class="btn btn-primary" type="submit">Send</button>
+              </div>
         </div>
     </div>
 
